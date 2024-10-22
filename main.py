@@ -4,10 +4,10 @@ from calculator.commands import Add_Command, Subtract_Command, Multiply_Command,
 def main():
     """Main REPL loop for calculator."""
     commands = {
-        "add command": Add_Command(),
-        "subtract command": Subtract_Command(),
-        "multiply command": Multiply_Command(),
-        "divide command": Divide_Command(),
+        "add": Add_Command(),
+        "subtract": Subtract_Command(),
+        "multiply": Multiply_Command(),
+        "divide": Divide_Command(),
     }
 
     while True:
