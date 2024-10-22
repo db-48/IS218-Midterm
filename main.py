@@ -1,5 +1,6 @@
 import sys
 from calculator.commands import Add_Command, Subtract_Command, Multiply_Command, Divide_Command
+from calculator.plugins.remainder_command import Remainder_Command 
 
 def main():
     """Main REPL loop for calculator."""
@@ -8,6 +9,7 @@ def main():
         "subtract": Subtract_Command(),
         "multiply": Multiply_Command(),
         "divide": Divide_Command(),
+        "remainder": Remainder_Command(),
     }
 
     while True:
