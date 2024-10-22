@@ -13,7 +13,7 @@ def main():
     while True:
         try:
             print("*\nHello! You've opened the Calculator.")
-            print("Avaliable Operations: add <num1> <num2>, subtract <num1> <num2>, multiply <num1> <num2>, divide <num1> <num2>")
+            print("Avaliable Operations: add, subtract, multiply, divide")
             user_input = input("Type a command (or 'exit' to close the program! ): ")
             if user_input.lower() == "exit":
                 break
