@@ -25,7 +25,7 @@ def main():
     while True:
         try:
             print("*\nHello! You've opened the Calculator.")
-            print("Avaliable Operations: add, subtract, multiply, divide or remainder")
+            print("Available Operations: add, subtract, multiply, divide or remainder")
             user_input = input("Type a command (or 'exit' to close the program! ): ")
             if user_input.lower() == "exit":
                 logger.info("Calculator exited.")
@@ -43,10 +43,10 @@ def main():
                 print("Error: Unknown command.")
                 logger.warning(f"Unknown command: {command_name}")
         except ValueError:
-            print("Error: Invalid input. Please enter numbers.")
+            print("Error: Invalid input. Please enter valid numbers.")
             logger.error("ValueError: Invalid input provided by the user.")
         except ZeroDivisionError as e:
-            print(e)
+            print(f"Error: {e}")
             logger.error("ZeroDivisionError: Division by zero attempted.")
         except Exception as e:
             print(f"An error occurred: {e}")
