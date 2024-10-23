@@ -1,4 +1,5 @@
 *.sw*
 .coverage
+.DS_Store
 .pytest_cache
 *__pycache__
