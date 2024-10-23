@@ -1,6 +1,15 @@
 import sys
+import logging
+import logging.config
 from calculator.commands import Add_Command, Subtract_Command, Multiply_Command, Divide_Command
 from calculator.plugins.remainder_command import Remainder_Command 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger('root')
 
 def main():
     """Main REPL loop for calculator."""
@@ -11,6 +20,7 @@ def main():
         "divide": Divide_Command(),
         "remainder": Remainder_Command(),
     }
+    logger.info("Calculator started.")
 
     while True:
         try:
@@ -18,6 +28,7 @@ def main():
             print("Avaliable Operations: add, subtract, multiply, divide or remainder")
             user_input = input("Type a command (or 'exit' to close the program! ): ")
             if user_input.lower() == "exit":
+                logger.info("Calculator exited.")
                 break
 
             parts = user_input.split()
@@ -27,14 +38,19 @@ def main():
             if command_name in commands:
                 result = commands[command_name].execute(*args)
                 print(f"Result: {result}")
+                logger.info(f"Executed command: {command_name} with args: {args}, result: {result}")
             else:
                 print("Error: Unknown command.")
+                logger.warning(f"Unknown command: {command_name}")
         except ValueError:
             print("Error: Invalid input. Please enter numbers.")
+            logger.error("ValueError: Invalid input provided by the user.")
         except ZeroDivisionError as e:
             print(e)
+            logger.error("ZeroDivisionError: Division by zero attempted.")
         except Exception as e:
             print(f"An error occurred: {e}")
+            logger.error(f"Unexpected error: {e}")
         
         print()
 
