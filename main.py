@@ -25,8 +25,14 @@ def main():
     while True:
         try:
             print("*\nHello! You've opened the Calculator.")
-            print("Available Operations: add, subtract, multiply, divide or remainder")
+            print("Available Operations:")
+            operations = ["add", "subtract", "multiply", "divide", "remainder"]
+
+            for operation in operations:
+                print(f" - {operation}")
+        
             user_input = input("Type a command (or 'exit' to close the program! ): ")
+            
             if user_input.lower() == "exit":
                 logger.info("Calculator exited.")
                 break
