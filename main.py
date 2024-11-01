@@ -23,6 +23,7 @@ def main():
         "divide": Divide_Command(),
         "remainder": Remainder_Command(),
     }
+    
     load_plugins(commands)
 
     history_data = pd.DataFrame(columns=['command_name', 'args', 'result'])
@@ -79,7 +80,7 @@ def main():
                     logger.warning(f"Unknown command: {command_name}")
 
             else:
-                print("Error: Unknown input. Type 'menu' to see available commands.")
+                print("Error: Unknown input.")
 
         except ValueError:
             print("Error: Invalid input. Please enter valid numbers.")
