@@ -1,7 +1,7 @@
 import sys
 import logging
 import logging.config
-from calculator.commands import Add_Command, Subtract_Command, Multiply_Command, Divide_Command
+from calculator.plugins.commands import Add_Command, Subtract_Command, Multiply_Command, Divide_Command
 from calculator.plugins.remainder_command import Remainder_Command 
 from calculator.plugins.history_management import show_history, clear_history,save_entry
 from calculator.plugins.plugin_loader import load_plugins

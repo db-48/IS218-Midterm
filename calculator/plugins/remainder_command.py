@@ -1,4 +1,4 @@
-from calculator.commands import Command
+from calculator.plugins.commands import Command
 
 class Remainder_Command(Command):
     def execute(self, a: float, b: float) -> float:

@@ -1,6 +1,6 @@
 import pytest 
 from calculator.calculations import Calculator
-from calculator.commands import Command, Add_Command, Subtract_Command, Multiply_Command, Divide_Command
+from calculator.plugins.commands import Command, Add_Command, Subtract_Command, Multiply_Command, Divide_Command
 
 @pytest.fixture
 def calculator():
