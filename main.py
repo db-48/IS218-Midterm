@@ -33,7 +33,7 @@ def main():
         try:
             print("*\nHello! You've opened the Calculator!")
             print("\nAvailable Operations:")
-            operations = ["add", "subtract", "multiply", "divide", "remainder"] + ["save","history", "clear",]
+            operations = ["add", "subtract", "multiply", "divide", "remainder"] + ["save","history", "clear",] + ["new command"]
 
             for operation in operations:
                 print(f" - {operation}")
@@ -63,17 +63,24 @@ def main():
                     print("No calculation to save.")
                 continue
 
-            parts = user_input.split()
-            command_name = parts[0]
-            args = list(map(float, parts[1:]))
-            
-            if command_name in commands:
-                result = commands[command_name].execute(*args)
-                print(f"Result: {result}")
-                logger.info(f"Executed command: {command_name} with args: {args}, result: {result}")
+            elif user_input == "new command":
+                command_name = input("Enter the command name: ").strip().lower()
+                args_input = input("Enter arguments separated by spaces: ").strip()
+                args = list(map(float, args_input.split()))
+
+                if command_name in commands:
+                    result = commands[command_name].execute(*args)
+                    print(f"Result: {result}")
+                    logger.info(f"Executed command: {command_name} with args: {args}, result: {result}")
+                    
+                    locals().update({"command_name": command_name, "args": args, "result": result})
+                else:
+                    print("Error: Unknown command.")
+                    logger.warning(f"Unknown command: {command_name}")
+
             else:
-                print("Error: Unknown command.")
-                logger.warning(f"Unknown command: {command_name}")
+                print("Error: Unknown input. Type 'menu' to see available commands.")
+
         except ValueError:
             print("Error: Invalid input. Please enter valid numbers.")
             logger.error("ValueError: Invalid input provided by the user.")
