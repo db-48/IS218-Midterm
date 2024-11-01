@@ -54,7 +54,7 @@ def main():
                 continue
             
             elif user_input.lower() == "save":
-                save_entry(history, command_name, args, result)  # Save to history
+                save_entry(history, command_name, args, result)
                 print("Entry saved to history.")
 
             parts = user_input.split()
