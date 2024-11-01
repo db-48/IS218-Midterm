@@ -17,7 +17,7 @@ The function load_plugins: Loads command classes from the specified plugin modul
 
 
 ### Professional Logging Practices
-INFO logs report standard operations (like starting or stopping the calculator, command executions, and history displays). WARNING logs notify about non-critical issues, such as an unrecognized command. ERROR logs handle exceptions (e.g., invalid user inputs, division by zero), which are displayed to the user and recorded for troubleshooting. Environment variables and configuration files make it easy to customize logging levels and output locations. The code loads settings from a `.env` file and sets up logging with `logging.conf`, enabling admins to adjust logging for different needs, like switching between debugging, production, or error-only modes. Mostof the error messages and the env variables can be found in [main.py](https://github.com/db-48/IS218-Midterm/blob/main/main.py).
+Info logs report standard operations (like starting or stopping the calculator, command executions, and history displays). Warning logs notify about non-critical issues, such as an unrecognized command. Error logs handle exceptions (e.g., invalid user inputs, division by zero), which are displayed to the user and recorded for troubleshooting. Environment variables and configuration files make it easy to customize logging levels and output locations. The code loads settings from a `.env` file and sets up logging with `logging.conf`, enabling admins to adjust logging for different needs, like switching between debugging, production, or error-only modes. Mostof the error messages and the env variables can be found in [main.py](https://github.com/db-48/IS218-Midterm/blob/main/main.py).
 
 
 
