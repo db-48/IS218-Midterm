@@ -110,6 +110,7 @@
 2024-11-01 12:18:48 - root - INFO - Calculation history cleared.
 2024-11-01 12:18:52 - root - INFO - Attempted to show history but no history available.
 2024-11-01 12:18:56 - root - INFO - Calculator exited.
+<<<<<<< HEAD
 2024-11-01 12:35:22 - root - ERROR - Plugin directory 'calculator/commands' not found.
 2024-11-01 12:35:22 - root - INFO - Calculator started.
 2024-11-01 12:35:49 - root - ERROR - ValueError: Invalid input provided by the user.
@@ -117,3 +118,79 @@
 2024-11-01 14:09:20 - root - ERROR - Plugin directory 'calculator/commands' not found.
 2024-11-01 14:09:20 - root - INFO - Calculator started.
 2024-11-01 14:09:35 - root - INFO - Calculator exited.
+=======
+2024-11-01 13:26:27 - root - ERROR - Failed to load plugins: [Errno 2] No such file or directory: 'calculator/commands'
+2024-11-01 13:26:27 - root - INFO - Calculator started.
+2024-11-01 13:26:27 - root - ERROR - Unexpected error: list index out of range
+2024-11-01 13:26:27 - root - ERROR - Unexpected error: list index out of range
+2024-11-01 13:26:27 - root - ERROR - Unexpected error: list index out of range
+2024-11-01 13:26:27 - root - ERROR - Unexpected error: list index out of range
+2024-11-01 13:26:27 - root - INFO - Calculator exited.
+2024-11-01 13:26:53 - root - ERROR - Failed to load plugins: [Errno 2] No such file or directory: 'calculator/commands'
+2024-11-01 13:26:53 - root - INFO - Calculator started.
+2024-11-01 13:26:57 - root - INFO - Executed command: add with args: [1.0, 2.0], result: 3.0
+2024-11-01 13:27:01 - root - INFO - Saved entry: {'command_name': 'add', 'args': [1.0, 2.0], 'result': 3.0}
+2024-11-01 13:27:35 - root - WARNING - Unknown command: subrtract
+2024-11-01 13:27:43 - root - INFO - Executed command: subtract with args: [2.0, 3.0], result: -1.0
+2024-11-01 13:27:50 - root - INFO - Executed command: multiply with args: [5.0, 3.0], result: 15.0
+2024-11-01 13:27:53 - root - INFO - Saved entry: {'command_name': 'multiply', 'args': [5.0, 3.0], 'result': 15.0}
+2024-11-01 13:27:58 - root - INFO - Attempted to show history but no history available.
+2024-11-01 13:30:34 - root - INFO - Calculator exited.
+2024-11-01 13:30:46 - root - ERROR - Failed to load plugins: [Errno 2] No such file or directory: 'calculator/commands'
+2024-11-01 13:30:46 - root - INFO - Calculator started.
+2024-11-01 13:30:50 - root - INFO - Executed command: add with args: [1.0, 2.0], result: 3.0
+2024-11-01 13:30:53 - root - INFO - Saved entry: {'command_name': 'add', 'args': [1.0, 2.0], 'result': 3.0}
+2024-11-01 13:30:53 - root - ERROR - Unexpected error: name 'updated_history_data' is not defined
+2024-11-01 13:31:12 - root - INFO - Executed command: add with args: [3.0, 5.0], result: 8.0
+2024-11-01 13:31:15 - root - INFO - Saved entry: {'command_name': 'add', 'args': [3.0, 5.0], 'result': 8.0}
+2024-11-01 13:31:15 - root - ERROR - Unexpected error: name 'updated_history_data' is not defined
+2024-11-01 13:35:28 - root - INFO - Executed command: add with args: [1.0, 3.0], result: 4.0
+2024-11-01 13:35:30 - root - INFO - Saved entry: {'command_name': 'add', 'args': [1.0, 3.0], 'result': 4.0}
+2024-11-01 13:35:30 - root - ERROR - Unexpected error: name 'updated_history_data' is not defined
+2024-11-01 13:36:09 - root - INFO - Calculator exited.
+2024-11-01 13:37:48 - root - ERROR - Failed to load plugins: [Errno 2] No such file or directory: 'calculator/commands'
+2024-11-01 13:37:48 - root - INFO - Calculator started.
+2024-11-01 13:37:53 - root - INFO - Executed command: add with args: [2.0, 4.0], result: 6.0
+2024-11-01 13:37:56 - root - INFO - Saved entry: {'command_name': 'add', 'args': [2.0, 4.0], 'result': 6.0}
+2024-11-01 13:38:04 - root - INFO - Attempted to show history but no history available.
+2024-11-01 13:39:58 - root - INFO - Executed command: add with args: [1.0, 4.0], result: 5.0
+2024-11-01 13:40:01 - root - INFO - Saved entry: {'command_name': 'add', 'args': [1.0, 4.0], 'result': 5.0}
+2024-11-01 13:40:07 - root - INFO - Attempted to show history but no history available.
+2024-11-01 13:45:39 - root - INFO - Calculator exited.
+2024-11-01 13:45:47 - root - ERROR - Failed to load plugins: [Errno 2] No such file or directory: 'calculator/commands'
+2024-11-01 13:45:47 - root - INFO - Calculator started.
+2024-11-01 13:45:50 - root - INFO - Executed command: add with args: [1.0, 2.0], result: 3.0
+2024-11-01 13:45:52 - root - INFO - Saved entry: {'command_name': 'add', 'args': [1.0, 2.0], 'result': 3.0}
+2024-11-01 13:46:13 - root - INFO - Executed command: multiply with args: [5.0, 6.0], result: 30.0
+2024-11-01 13:46:14 - root - INFO - Saved entry: {'command_name': 'multiply', 'args': [5.0, 6.0], 'result': 30.0}
+2024-11-01 13:46:19 - root - INFO - Attempted to show history but no history available.
+2024-11-01 13:46:31 - root - INFO - Executed command: add with args: [1.0, 3.0], result: 4.0
+2024-11-01 13:46:38 - root - INFO - Saved entry: {'command_name': 'add', 'args': [1.0, 3.0], 'result': 4.0}
+2024-11-01 13:48:57 - root - INFO - Calculator exited.
+2024-11-01 13:49:03 - root - ERROR - Failed to load plugins: [Errno 2] No such file or directory: 'calculator/commands'
+2024-11-01 13:49:03 - root - INFO - Calculator started.
+2024-11-01 13:49:06 - root - INFO - Executed command: add with args: [2.0, 4.0], result: 6.0
+2024-11-01 13:49:09 - root - INFO - Saved entry: {'command_name': 'add', 'args': [2.0, 4.0], 'result': 6.0}
+2024-11-01 13:49:20 - root - INFO - Executed command: multiply with args: [2.0, 4.0], result: 8.0
+2024-11-01 13:49:26 - root - INFO - Executed command: divide with args: [12.0, 3.0], result: 4.0
+2024-11-01 13:49:29 - root - INFO - Saved entry: {'command_name': 'divide', 'args': [12.0, 3.0], 'result': 4.0}
+2024-11-01 13:49:34 - root - INFO - Displayed calculation history.
+2024-11-01 13:49:53 - root - INFO - Calculator exited.
+2024-11-01 13:49:59 - root - ERROR - Failed to load plugins: [Errno 2] No such file or directory: 'calculator/commands'
+2024-11-01 13:49:59 - root - INFO - Calculator started.
+2024-11-01 13:50:03 - root - INFO - Executed command: add with args: [2.0, 5.0], result: 7.0
+2024-11-01 13:50:06 - root - INFO - Saved entry: {'command_name': 'add', 'args': [2.0, 5.0], 'result': 7.0}
+2024-11-01 13:50:17 - root - INFO - Executed command: multiply with args: [3.0, 2.0], result: 6.0
+2024-11-01 13:50:19 - root - INFO - Saved entry: {'command_name': 'multiply', 'args': [3.0, 2.0], 'result': 6.0}
+2024-11-01 13:50:35 - root - INFO - Displayed calculation history.
+2024-11-01 13:50:49 - root - INFO - Attempted to show history but no history available.
+2024-11-01 13:52:00 - root - INFO - Calculator exited.
+2024-11-01 14:09:55 - root - ERROR - Failed to load plugins: [Errno 2] No such file or directory: 'calculator/commands'
+2024-11-01 14:09:55 - root - INFO - Calculator started.
+2024-11-01 14:09:59 - root - INFO - Executed command: add with args: [5.0, 6.0], result: 11.0
+2024-11-01 14:10:02 - root - WARNING - Unknown command: save
+2024-11-01 14:10:05 - root - INFO - Saved entry: {'command_name': 'save', 'args': [], 'result': 11.0}
+2024-11-01 14:10:08 - root - INFO - Displayed calculation history.
+2024-11-01 14:10:14 - root - WARNING - Unknown command: exxit
+2024-11-01 14:10:16 - root - INFO - Calculator exited.
+>>>>>>> Pandas
