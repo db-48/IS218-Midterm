@@ -10,10 +10,7 @@ This program allows users to perform basic arithmetic operations such as additio
 These basic operations are found in [calculator/plugins/commands](https://github.com/db-48/IS218-Midterm/blob/main/calculator/plugins/commands.py) It also tracks calculation history by saving, showing and clearing history as per user input; show_history: Displays the calculation history, printing each command with its arguments and result, or notifies the user if no history is available, clear_history: Resets the calculation history by returning an empty DataFrame with predefined columns, save_entry: Saves a new entry to the calculation history, creating a DataFrame with the command name, arguments, and result, and combines it with the existing history if it’s not empty. These functions are found under [calculator/plugins/history_management](https://github.com/db-48/IS218-Midterm/blob/main/calculator/plugins/history_management.py). 
 
 ### Plugin System
-
-Create a flexible plugin system to allow seamless integration of new commands or features. This system should:
-- Dynamically load and integrate plugins without modifying the core application code.
-- Include a REPL  "Menu" command to list all available plugin commands, ensuring user discoverability and interaction.
+The function load_plugins: Loads command classes from the specified plugin module and adds them to the commands dictionary, logging successful loads or errors encountered during the process. This function is found in [calculator/plugins/plugin_loader](https://github.com/db-48/IS218-Midterm/blob/main/calculator/plugins/plugin_loader.py) 
 
 ### Calculation History Management with Pandas
 
