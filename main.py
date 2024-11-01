@@ -7,6 +7,7 @@ from calculator.plugins.history_management import show_history, clear_history,sa
 from calculator.plugins.plugin_loader import load_plugins
 import os
 from dotenv import load_dotenv
+import pandas as pd
 
 load_dotenv()
 
@@ -24,7 +25,7 @@ def main():
     }
     load_plugins(commands)
 
-    history = []
+    history_data = pd.DataFrame(columns=['command_name', 'args', 'result'])
 
     logger.info("Calculator started.")
 
@@ -46,16 +47,16 @@ def main():
                 break
 
             elif user_input.lower() == "history":
-                show_history(history)
+                show_history(history_data)
                 continue
             
             elif user_input.lower() == "clear":
-                clear_history(history)
+                clear_history(history_data)
                 continue
             
             elif user_input.lower() == "save":
                 if 'command_name' in locals() and 'args' in locals() and 'result' in locals():
-                    save_entry(history, command_name, args, result) 
+                    save_entry(history_data, command_name, args, result) 
                     print("Entry saved to history.")
                 else:
                     print("No calculation to save.")
