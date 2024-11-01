@@ -30,4 +30,3 @@ def save_entry(history_data, command: str, args: list, result):
         return entry 
     
     return pd.concat([history_data, entry], ignore_index=True)
-    
