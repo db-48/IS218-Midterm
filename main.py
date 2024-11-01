@@ -51,12 +51,13 @@ def main():
                 continue
             
             elif user_input.lower() == "clear":
-                clear_history(history_data)
+                history_data=clear_history(history_data)
+                print("History has been cleared.")
                 continue
             
             elif user_input.lower() == "save":
                 if 'command_name' in locals() and 'args' in locals() and 'result' in locals():
-                    save_entry(history_data, command_name, args, result) 
+                    history_data= save_entry(history_data, command_name, args, result) 
                     print("Entry saved to history.")
                 else:
                     print("No calculation to save.")
