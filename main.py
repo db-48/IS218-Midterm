@@ -79,14 +79,8 @@ def main():
                     logger.warning(f"Unknown command: {command_name}")
 
             else:
-<<<<<<< HEAD
-                print("Error: Unknown command.")
-                logger.warning(f"Unknown command: {command_name}")
-                
-=======
                 print("Error: Unknown input. Type 'menu' to see available commands.")
 
->>>>>>> b7e108ef12a588b5328c2059f015f557199529a7
         except ValueError:
             print("Error: Invalid input. Please enter valid numbers.")
             logger.error("ValueError: Invalid input provided by the user.")
