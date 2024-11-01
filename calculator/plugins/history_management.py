@@ -3,9 +3,15 @@ import logging
 logger = logging.getLogger('root')
 
 def show_history(history):
+    if not history:
+        print("Sorry! No history available.")
+        logger.info("Attempted to show history but no history available.")
+        return
+
     print("\nCalculation History:")
-    for index, (command, args, result) in enumerate(history, 1):
+    for index, (command, args, result) in enumerate(history, start=1):
         print(f"{index}. {command.capitalize()}({', '.join(map(str, args))}) = {result}")
+    logger.info("Displayed calculation history.")
     print()
 
 def clear_history(history):
