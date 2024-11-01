@@ -81,3 +81,32 @@
 2024-11-01 09:46:24 - root - INFO - Displayed calculation history.
 2024-11-01 09:47:09 - root - WARNING - Unknown command: exit
 2024-11-01 09:47:13 - root - INFO - Calculator exited.
+2024-11-01 12:16:30 - root - ERROR - Failed to load plugins: [Errno 2] No such file or directory: 'calculator/commands'
+2024-11-01 12:16:30 - root - INFO - Calculator started.
+2024-11-01 12:16:35 - root - INFO - Attempted to show history but no history available.
+2024-11-01 12:16:41 - root - INFO - Executed command: add with args: [1.0, 2.0], result: 3.0
+2024-11-01 12:16:43 - root - INFO - Saved entry: ('add', [1.0, 2.0], 3.0)
+2024-11-01 12:16:43 - root - WARNING - Unknown command: save
+2024-11-01 12:16:47 - root - INFO - Displayed calculation history.
+2024-11-01 12:16:56 - root - INFO - Executed command: subtract with args: [3.0, 4.0], result: -1.0
+2024-11-01 12:16:59 - root - INFO - Saved entry: ('subtract', [3.0, 4.0], -1.0)
+2024-11-01 12:16:59 - root - WARNING - Unknown command: save
+2024-11-01 12:17:03 - root - INFO - Displayed calculation history.
+2024-11-01 12:17:07 - root - INFO - Calculation history cleared.
+2024-11-01 12:17:11 - root - INFO - Attempted to show history but no history available.
+2024-11-01 12:17:18 - root - INFO - Executed command: add with args: [5.0, 6.0], result: 11.0
+2024-11-01 12:17:20 - root - INFO - Saved entry: ('add', [5.0, 6.0], 11.0)
+2024-11-01 12:17:20 - root - WARNING - Unknown command: save
+2024-11-01 12:18:06 - root - INFO - Calculator exited.
+2024-11-01 12:18:11 - root - ERROR - Failed to load plugins: [Errno 2] No such file or directory: 'calculator/commands'
+2024-11-01 12:18:11 - root - INFO - Calculator started.
+2024-11-01 12:18:15 - root - INFO - Executed command: add with args: [2.0, 4.0], result: 6.0
+2024-11-01 12:18:17 - root - INFO - Saved entry: ('add', [2.0, 4.0], 6.0)
+2024-11-01 12:18:25 - root - INFO - Executed command: multiply with args: [2.0, 4.0], result: 8.0
+2024-11-01 12:18:28 - root - INFO - Saved entry: ('multiply', [2.0, 4.0], 8.0)
+2024-11-01 12:18:35 - root - INFO - Executed command: divide with args: [13.0, 3.0], result: 4.333333333333333
+2024-11-01 12:18:38 - root - INFO - Saved entry: ('divide', [13.0, 3.0], 4.333333333333333)
+2024-11-01 12:18:43 - root - INFO - Displayed calculation history.
+2024-11-01 12:18:48 - root - INFO - Calculation history cleared.
+2024-11-01 12:18:52 - root - INFO - Attempted to show history but no history available.
+2024-11-01 12:18:56 - root - INFO - Calculator exited.

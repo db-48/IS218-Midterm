@@ -59,6 +59,7 @@ def main():
                     print("Entry saved to history.")
                 else:
                     print("No calculation to save.")
+                continue
 
             parts = user_input.split()
             command_name = parts[0]
