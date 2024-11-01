@@ -24,6 +24,7 @@ def clear_history(history_data):
 
 def save_entry(history_data, command: str, args: list, result):
     entry = pd.DataFrame({'command_name': [command], 'args': [args], 'result': [result]})
-    updated_history_data = pd.concat([history_data, entry], ignore_index=True)
     logger.info(f"Saved entry: {entry.to_dict(orient='records')[0]}")
-    return updated_history_data
+    
+    return pd.concat([history_data, entry], ignore_index=True)
+    
