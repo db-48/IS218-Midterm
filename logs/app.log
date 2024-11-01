@@ -110,3 +110,7 @@
 2024-11-01 12:18:48 - root - INFO - Calculation history cleared.
 2024-11-01 12:18:52 - root - INFO - Attempted to show history but no history available.
 2024-11-01 12:18:56 - root - INFO - Calculator exited.
+2024-11-01 12:35:22 - root - ERROR - Plugin directory 'calculator/commands' not found.
+2024-11-01 12:35:22 - root - INFO - Calculator started.
+2024-11-01 12:35:49 - root - ERROR - ValueError: Invalid input provided by the user.
+2024-11-01 12:36:48 - root - INFO - Calculator exited.
