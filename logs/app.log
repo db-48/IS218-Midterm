@@ -110,6 +110,7 @@
 2024-11-01 12:18:48 - root - INFO - Calculation history cleared.
 2024-11-01 12:18:52 - root - INFO - Attempted to show history but no history available.
 2024-11-01 12:18:56 - root - INFO - Calculator exited.
+<<<<<<< HEAD
 2024-11-01 13:26:27 - root - ERROR - Failed to load plugins: [Errno 2] No such file or directory: 'calculator/commands'
 2024-11-01 13:26:27 - root - INFO - Calculator started.
 2024-11-01 13:26:27 - root - ERROR - Unexpected error: list index out of range
@@ -184,3 +185,6 @@
 2024-11-01 14:10:08 - root - INFO - Displayed calculation history.
 2024-11-01 14:10:14 - root - WARNING - Unknown command: exxit
 2024-11-01 14:10:16 - root - INFO - Calculator exited.
+=======
+
+>>>>>>> b7e108ef12a588b5328c2059f015f557199529a7
