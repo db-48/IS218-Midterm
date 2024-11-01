@@ -194,3 +194,6 @@
 2024-11-01 14:10:14 - root - WARNING - Unknown command: exxit
 2024-11-01 14:10:16 - root - INFO - Calculator exited.
 >>>>>>> Pandas
+2024-11-01 14:27:39 - root - ERROR - Plugin directory 'calculator/commands' not found.
+2024-11-01 14:27:39 - root - INFO - Calculator started.
+2024-11-01 14:27:58 - root - INFO - Calculator exited.
