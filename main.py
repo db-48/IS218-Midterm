@@ -69,18 +69,14 @@ def main():
                 args_input = input("Enter arguments separated by spaces: ").strip()
                 args = list(map(float, args_input.split()))
 
-                if command_name in commands: 
+                if command_name in commands:
                     result = commands[command_name].execute(*args)
                     print(f"Result: {result}")
                     logger.info(f"Executed command: {command_name} with args: {args}, result: {result}")
-                    
                     locals().update({"command_name": command_name, "args": args, "result": result})
-                else:
-                    print("Error: Unknown command.")
-                    logger.warning(f"Unknown command: {command_name}")
-
             else:
-                print("Error: Unknown input.")
+                print("Error: Unknown command.")
+                logger.warning(f"Unknown command: {command_name}")
 
         except ValueError:
             print("Error: Invalid input. Please enter valid numbers.")
@@ -91,7 +87,7 @@ def main():
         except Exception as e:
             print(f"An error occurred: {e}")
             logger.error(f"Unexpected error: {e}")
-        
+
         print()
 
 if __name__ == "__main__":
