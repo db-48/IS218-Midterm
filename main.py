@@ -32,7 +32,7 @@ def main():
         try:
             print("*\nHello! You've opened the Calculator!")
             print("\nAvailable Operations:")
-            operations = ["add", "subtract", "multiply", "divide", "remainder"] + ["history", "clear"]
+            operations = ["add", "subtract", "multiply", "divide", "remainder"] + ["history", "clear",]
 
             for operation in operations:
                 print(f" - {operation}")

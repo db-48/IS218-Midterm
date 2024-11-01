@@ -18,3 +18,9 @@ def clear_history(history):
     history.clear()
     logger.info("Calculation history cleared.")
     print("History cleared.\n")
+
+def save_entry(command: str, args: tuple, result):
+    """Saves a calculation entry to the history."""
+    entry = (command, args, result)
+    history.append(entry)
+    logger.info(f"Saved entry: {entry}")

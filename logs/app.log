@@ -46,3 +46,9 @@
 2024-11-01 09:13:21 - root - INFO - Executed command: remainder with args: [13.0, 3.0], result: 1.0
 2024-11-01 09:13:36 - root - WARNING - Unknown command: clear
 2024-11-01 09:13:44 - root - INFO - Calculator exited.
+2024-11-01 09:18:11 - root - ERROR - Failed to load plugins: [Errno 2] No such file or directory: 'calculator/commands'
+2024-11-01 09:18:11 - root - INFO - Calculator started.
+2024-11-01 09:18:15 - root - INFO - Executed command: add with args: [1.0, 2.0], result: 3.0
+2024-11-01 09:18:21 - root - INFO - Executed command: subtract with args: [567.0, 34.0], result: 533.0
+2024-11-01 09:18:28 - root - INFO - Attempted to show history but no history available.
+2024-11-01 09:32:14 - root - INFO - Calculator exited.
