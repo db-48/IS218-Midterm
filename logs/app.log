@@ -176,3 +176,11 @@
 2024-11-01 13:50:35 - root - INFO - Displayed calculation history.
 2024-11-01 13:50:49 - root - INFO - Attempted to show history but no history available.
 2024-11-01 13:52:00 - root - INFO - Calculator exited.
+2024-11-01 14:09:55 - root - ERROR - Failed to load plugins: [Errno 2] No such file or directory: 'calculator/commands'
+2024-11-01 14:09:55 - root - INFO - Calculator started.
+2024-11-01 14:09:59 - root - INFO - Executed command: add with args: [5.0, 6.0], result: 11.0
+2024-11-01 14:10:02 - root - WARNING - Unknown command: save
+2024-11-01 14:10:05 - root - INFO - Saved entry: {'command_name': 'save', 'args': [], 'result': 11.0}
+2024-11-01 14:10:08 - root - INFO - Displayed calculation history.
+2024-11-01 14:10:14 - root - WARNING - Unknown command: exxit
+2024-11-01 14:10:16 - root - INFO - Calculator exited.
