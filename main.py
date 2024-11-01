@@ -78,18 +78,18 @@ def main():
                     print("Error: Unknown command.")
                     logger.warning(f"Unknown command: {command_name}")
             else:
-            parts = user_input.split()
-            command_name = parts[0]
-            args = list(map(float, parts[1:]))
+                parts = user_input.split()
+                command_name = parts[0]
+                args = list(map(float, parts[1:]))
 
-            if command_name in commands:
-                result = commands[command_name].execute(*args)
-                print(f"Result: {result}")
-                logger.info(f"Executed command: {command_name} with args: {args}, result: {result}")
-                locals().update({"command_name": command_name, "args": args, "result": result})
-            else:
-                print("Error: Unknown command.")
-                logger.warning(f"Unknown command: {command_name}")
+                if command_name in commands:
+                    result = commands[command_name].execute(*args)
+                    print(f"Result: {result}")
+                    logger.info(f"Executed command: {command_name} with args: {args}, result: {result}")
+                    locals().update({"command_name": command_name, "args": args, "result": result})
+                else:
+                    print("Error: Unknown command.")
+                    logger.warning(f"Unknown command: {command_name}")
 
         except ValueError:
             print("Error: Invalid input. Please enter valid numbers.")
