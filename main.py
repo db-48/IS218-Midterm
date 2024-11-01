@@ -3,7 +3,7 @@ import logging
 import logging.config
 from calculator.commands import Add_Command, Subtract_Command, Multiply_Command, Divide_Command
 from calculator.plugins.remainder_command import Remainder_Command 
-from calculator.plugins.history_management import show_history, clear_history
+from calculator.plugins.history_management import show_history, clear_history,save_entry
 from calculator.plugins.plugin_loader import load_plugins
 import os
 from dotenv import load_dotenv
@@ -54,8 +54,11 @@ def main():
                 continue
             
             elif user_input.lower() == "save":
-                save_entry(history, command_name, args, result)
-                print("Entry saved to history.")
+                if 'command_name' in locals() and 'args' in locals() and 'result' in locals():
+                    save_entry(history, command_name, args, result) 
+                    print("Entry saved to history.")
+                else:
+                    print("No calculation to save.")
 
             parts = user_input.split()
             command_name = parts[0]
