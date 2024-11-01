@@ -74,6 +74,7 @@ def main():
             else:
                 print("Error: Unknown command.")
                 logger.warning(f"Unknown command: {command_name}")
+                
         except ValueError:
             print("Error: Invalid input. Please enter valid numbers.")
             logger.error("ValueError: Invalid input provided by the user.")
