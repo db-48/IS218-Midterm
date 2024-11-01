@@ -64,7 +64,7 @@ def main():
                     print("No calculation to save.")
                 continue
 
-            elif user_input == "new command":
+            elif user_input.lower() == "new command":
                 command_name = input("Enter the command name: ").strip().lower()
                 args_input = input("Enter arguments separated by spaces: ").strip()
                 args = list(map(float, args_input.split()))
@@ -74,6 +74,19 @@ def main():
                     print(f"Result: {result}")
                     logger.info(f"Executed command: {command_name} with args: {args}, result: {result}")
                     locals().update({"command_name": command_name, "args": args, "result": result})
+                else:
+                    print("Error: Unknown command.")
+                    logger.warning(f"Unknown command: {command_name}")
+            else:
+            parts = user_input.split()
+            command_name = parts[0]
+            args = list(map(float, parts[1:]))
+
+            if command_name in commands:
+                result = commands[command_name].execute(*args)
+                print(f"Result: {result}")
+                logger.info(f"Executed command: {command_name} with args: {args}, result: {result}")
+                locals().update({"command_name": command_name, "args": args, "result": result})
             else:
                 print("Error: Unknown command.")
                 logger.warning(f"Unknown command: {command_name}")
