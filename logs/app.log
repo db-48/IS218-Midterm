@@ -228,3 +228,9 @@
 2024-11-01 15:19:03 - root - INFO - Loaded plugin: subtract_
 2024-11-01 15:19:03 - root - INFO - Calculator started.
 2024-11-01 15:25:57 - root - INFO - Calculator exited.
+2024-11-01 15:26:35 - root - INFO - Loaded plugin: add_
+2024-11-01 15:26:35 - root - INFO - Loaded plugin: divide_
+2024-11-01 15:26:35 - root - INFO - Loaded plugin: multiply_
+2024-11-01 15:26:35 - root - INFO - Loaded plugin: subtract_
+2024-11-01 15:26:35 - root - INFO - Calculator started.
+2024-11-01 15:27:09 - root - INFO - Calculator exited.
