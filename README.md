@@ -41,19 +41,5 @@ Incorporate key design patterns to address software design challenges, including
 - **Command Pattern:** Structure commands within the REPL for effective calculation and history management.
 - **Factory Method, Singleton, and Strategy Patterns:** Further enhance the application's code structure, flexibility, and scalability.
 
-## Development, Testing, and Documentation Requirements
-
-### Testing and Code Quality
-
-- Achieve a minimum of 90% test coverage with Pytest.
-- ~~Ensure code quality and adherence to PEP 8 standards, verified by Pylint.~~
-
-### Version Control Best Practices
-
-- Utilize logical commits that clearly group feature development and corresponding tests, evidencing clear development progression.
-
-### Comprehensive Documentation
-
-- Compile detailed documentation in `README.md`, covering setup instructions, usage examples, and an in-depth analysis of architectural decisions, particularly emphasizing the implementation and impact of chosen design patterns and the logging strategy.
 
 
