@@ -32,7 +32,7 @@ def main():
         try:
             print("*\nHello! You've opened the Calculator!")
             print("\nAvailable Operations:")
-            operations = ["add", "subtract", "multiply", "divide", "remainder"] + ["history", "clear",]
+            operations = ["add", "subtract", "multiply", "divide", "remainder"] + ["save","history", "clear",]
 
             for operation in operations:
                 print(f" - {operation}")
@@ -52,7 +52,10 @@ def main():
             elif user_input.lower() == "clear":
                 clear_history(history)
                 continue
-
+            
+            elif user_input.lower() == "save":
+                save_entry(history, command_name, args, result)  # Save to history
+                print("Entry saved to history.")
 
             parts = user_input.split()
             command_name = parts[0]
