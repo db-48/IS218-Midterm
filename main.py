@@ -69,7 +69,7 @@ def main():
                 args_input = input("Enter arguments separated by spaces: ").strip()
                 args = list(map(float, args_input.split()))
 
-                if command_name in commands:
+                if command_name in commands: 
                     result = commands[command_name].execute(*args)
                     print(f"Result: {result}")
                     logger.info(f"Executed command: {command_name} with args: {args}, result: {result}")
